@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuestionario: Cultura Maya y Yucatán</title>
+    <meta name="author" content="Cynthia Alessandra Aguilar Uicab">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script type="text/javascript" src="../js/codigo.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1><em>Cuestionario interactivo</em></h1>
+</header>
+
+<section>
+    <h2><em>Cultura Maya y Yucatán</em></h2>
+    <p>
+    <img src="../imagenes/cultura_maya.webp" alt="Cultura Maya">
+    </p>
+    <p>¿Cuánto sabes de nuestra tierra? Elige una respuesta en cada pregunta y da clic en <strong>Calificar</strong>.</p>
+
+    <div class="herramienta">
+
+        <p class="pregunta"><strong>1. ¿Cómo se llama la famosa pirámide de Chichén Itzá dedicada a Kukulcán?</strong></p>
+        <select id="preg1">
+            <option value="">-- Elige una opción --</option>
+            <option value="sol">Pirámide del Sol</option>
+            <option value="castillo">El Castillo</option>
+            <option value="luna">Pirámide de la Luna</option>
+        </select>
+
+        <p class="pregunta"><strong>2. ¿En qué año Chichén Itzá fue nombrada una de las Nuevas 7 Maravillas del Mundo?</strong></p>
+        <select id="preg2">
+            <option value="">-- Elige una opción --</option>
+            <option value="1999">1999</option>
+            <option value="2007">2007</option>
+            <option value="2015">2015</option>
+        </select>
+
+        <p class="pregunta"><strong>3. ¿Qué platillo yucateco se prepara con achiote y se cocinaba bajo tierra?</strong></p>
+        <select id="preg3">
+            <option value="">-- Elige una opción --</option>
+            <option value="pastor">Tacos al pastor</option>
+            <option value="nogada">Chiles en nogada</option>
+            <option value="pibil">Cochinita pibil</option>
+        </select>
+
+        <p class="pregunta"><strong>4. En los equinoccios, ¿qué se ve en la escalinata de El Castillo?</strong></p>
+        <select id="preg4">
+            <option value="">-- Elige una opción --</option>
+            <option value="arcoiris">Un arcoíris</option>
+            <option value="serpiente">La sombra de una serpiente</option>
+            <option value="estrellas">Una lluvia de estrellas</option>
+        </select>
+
+        <p class="pregunta"><strong>5. Hace unos 66 millones de años un asteroide cayó cerca de Chicxulub, Yucatán. ¿Qué se cree que provocó?</strong></p>
+        <select id="preg5">
+            <option value="">-- Elige una opción --</option>
+            <option value="hielo">El inicio de la Edad de Hielo</option>
+            <option value="mayas">La aparición de los mayas</option>
+            <option value="dinosaurios">La extinción de los dinosaurios</option>
+        </select>
+
+        <br><br>
+        <button onclick="calificar()">Calificar</button>
+        <button onclick="reiniciar()">Reiniciar</button>
+
+        <p class="resultado" id="resultado"></p>
+    </div>
+</section>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="../index/index.html">Inicio</a></li>
+            <li><a href="../autobiografia/autobiografia.html">Autobiografía</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
+            <li><a href="../galeria/galeria.html">Galería</a></li>
+            <li><a href="../conversor/conversor.html">Conversor</a></li>
+            <li><a href="../calculadora/calculadora.html">Calculadora</a></li>
+            <li><a href="../db/panel.php">Usuarios</a></li>
+            <li><a href="../db/logout.php">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

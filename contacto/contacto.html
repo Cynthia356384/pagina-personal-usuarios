@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <meta name="author" content="Cynthia Alessandra Aguilar Uicab">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script type="text/javascript" src="../js/codigo.js"></script>
+</head>
+
+<body onload="saludar()">
+
+<header>
+    <h1><em>Formulario de Registro</em></h1>
+</header>
+
+<section>
+
+    <h2><em>Regístrate</em></h2>
+  
+    <p class="resultado" id="saludo"></p>
+
+    <p>Llena este formulario para conocer un poco más de ti.</p>
+      <p>
+        <img src="../imagenes/snoopy_credencial.webp" alt="Snoopy mostrando su credencial">
+    </p>
+
+
+    <form action="#" method="post" onsubmit="return validar();">
+
+        <fieldset>
+            <legend>Información Personal - Nombre</legend>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="Nombre" type="text"><br><br>
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" name="Apellidos" type="text">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>¿Cuál es tu género? - Género</legend>
+            <input type="radio" name="radio1" id="radio1">
+            <label for="radio1">Masculino</label>
+            <input type="radio" name="radio1" id="radio2">
+            <label for="radio2">Femenino</label>
+            <input type="radio" name="radio1" id="radio3">
+            <label for="radio3">Prefiero no decirlo</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>¿Qué te gusta hacer? - Intereses</legend>
+            <input type="checkbox" name="intereses" id="deporte" value="Deportes">
+            <label for="deporte">Hacer Deportes</label>
+            <input type="checkbox" name="intereses" id="tv" value="Television">
+            <label for="tv">Ver television</label>
+            <input type="checkbox" name="intereses" id="ejercicio" value="Ejercicio">
+            <label for="ejercicio">Hacer ejercicio</label>
+            <input type="checkbox" name="intereses" id="estar_en_casa" value="Estar en casa">
+            <label for="estar_en_casa">Estar en casa</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>¿Qué estás estudiando actualmente? - Licenciatura</legend>
+            <select name="select" id="licenciatura">
+                <option value="">-- Selecciona una opción --</option>
+                <option value="value1">Educación</option>
+                <option value="value2">Contaduría</option>
+                <option value="value3">Enfermería</option>
+                <option value="value4">Ingeniería en software</option>
+                <option value="value5">Veterinaria</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>¿Qué navegador usas? - Navegador Usado</legend>
+            <label>Selecciona el buscador utilizado:
+            <input list="Buscadores" name="MisBuscadores" id="navegador"></label>
+            <datalist id="Buscadores">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Internet Explorer">
+                <option value="Opera">
+                <option value="Safari">
+                <option value="Microsoft Edge">
+            </datalist>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Cuéntanos algo más - Comentarios</legend>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+        </fieldset>
+        <br>
+
+        <p class="error" id="errores"></p>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="../index/index.html">Inicio</a></li>
+            <li><a href="../autobiografia/autobiografia.html">Autobiografía</a></li>
+            <li><a href="../galeria/galeria.html">Galería</a></li>
+            <li><a href="../conversor/conversor.html">Conversor</a></li>
+            <li><a href="../calculadora/calculadora.html">Calculadora</a></li>
+            <li><a href="../cuestionario/cuestionario.html">Cuestionario</a></li>
+            <li><a href="../db/panel.php">Usuarios</a></li>
+            <li><a href="../db/logout.php">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>
